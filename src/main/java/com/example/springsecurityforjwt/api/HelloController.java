@@ -12,6 +12,7 @@ public class HelloController {
     public String hello() {
         SecurityContext context = SecurityContextHolder.getContext();
         Authentication authentication = context.getAuthentication();
+
         return "Hello World";
     }
 }
